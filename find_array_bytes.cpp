@@ -5,11 +5,12 @@
 
 using namespace std;
 
-int index_of()
+int FindByteArray()
 {
     unsigned char arrayToSearchThrough[8] = { 0x00, 0x01, 0x0f, 0x01, 0x03, 0x07, 0xc0, 0x1a };
     unsigned char patternToFind[5] = { 0x01, 0x0f, 0x01, 0x03, 0x07 };
 
+    // if pattern greater than of source byte array.
     if (sizeof(patternToFind) > sizeof(arrayToSearchThrough))
         return -1;
 
@@ -40,6 +41,9 @@ int index_of()
 int main(int argc, char *argv[])
 {
 
-    int res = index_of();
+    if(FindByteArray() == 1)
+    {
+        printf("Pattern is available in Source Byte Array.");
+    }
     return 0;
 }
