@@ -1,4 +1,11 @@
 /* Published by Pars Coding Team */
+
+/*
+in this code you can find one byte array in another byte array.
+each byte array can have different size.
+null bytes can check in this code.
+*/
+
 #include <iostream>
 #include <stdio.h>
 #include <string.h>
